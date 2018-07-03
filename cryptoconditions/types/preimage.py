@@ -103,7 +103,7 @@ class PreimageSha256(BaseSha256):
             raise MissingDataError('Preimage must be specified')
         return len(self.preimage)
 
-    def validate(self, *args, **kwargs):
+    def validate(self, message):
         """
         Validate this fulfillment.
 

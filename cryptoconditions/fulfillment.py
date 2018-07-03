@@ -236,7 +236,7 @@ class Fulfillment(metaclass=ABCMeta):
         """
 
     @abstractmethod
-    def validate(self, *args, **kwargs):
+    def validate(self, message):
         """
         Validate this fulfillment
 

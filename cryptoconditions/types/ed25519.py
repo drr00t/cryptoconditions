@@ -192,7 +192,7 @@ class Ed25519Sha256(BaseSha256):
         self.public_key = data['publicKey']
         self.signature = data['signature']
 
-    def validate(self, *, message):
+    def validate(self, message):
         """
         Verify the signature of this Ed25519 fulfillment.
 
